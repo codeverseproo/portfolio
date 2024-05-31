@@ -1,12 +1,17 @@
 import { personalDetail, socialLinks } from "../lib/appConst"
 import Button from "./utils/Button"
 import closeShot from "../assets/closeShot.jpg"
+import { useState } from "react"
 
 
 export default function Hero() {
 
+    const [currentRot, setCurrentRot] = useState("right")
+
+
     return (
-        <section id="About-Me" className="flex min-h-screen justify-center gap-20 items-center px-16 max-md:py-16 md:flex-row flex-col">
+
+        <section id="About-Me" className="flex min-h-screen justify-center gap-20 items-center px-16 max-md:py-16 md:flex-row flex-col" >
             <div className="flex flex-col justify-center items-center gap-2">
                 <h2 className="font-karla font-bold text-4xl">{personalDetail.name}</h2>
                 <h3 className="text-xl font-semibold">{personalDetail.role}</h3>
@@ -24,9 +29,9 @@ export default function Hero() {
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex justify-center items-center">
-                    <img src={closeShot} className="rounded-full w-[70%]"></img>
+                    <img src={closeShot} className={`rounded-full w-[70%] transition-all duration-75 ${currentRot == "right" ? "lg:hover:rotate-6" : "lg:hover:-rotate-6"}`} onMouseLeave={() => setCurrentRot(currentRot == 'right' ? "left" : "right")}></img>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
