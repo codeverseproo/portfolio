@@ -28,6 +28,6 @@
     @apply px-16 py-16;
   }
   .input {
-    @apply sm:w-[400px] px-2 py-2 border-none rounded-md text-black;
+    @apply sm:w-[400px] px-2 py-2 ring-1 ring-dgreen-700 rounded-md text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-dgreen-500 focus:border-transparent;
   }
 }

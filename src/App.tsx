@@ -1,20 +1,28 @@
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import MainComp from "./components/MainComp";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { ThemeContextProvider } from "./contextProviders/themeContext";
 
 function App() {
+
+
+
   return (
-    <main className="bg-dgreen-700 min-h-screen text-gray-50">
-      <Nav />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <ThemeContextProvider>
+      <MainComp>
+        <Nav />
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </MainComp>
+
+    </ThemeContextProvider >
   );
 }
 

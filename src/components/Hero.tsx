@@ -4,6 +4,7 @@ import closeShot from "../assets/closeShot.jpg"
 
 
 export default function Hero() {
+
     return (
         <section id="About-Me" className="flex min-h-screen justify-center gap-20 items-center px-16 max-md:py-16 md:flex-row flex-col">
             <div className="flex flex-col justify-center items-center gap-2">
