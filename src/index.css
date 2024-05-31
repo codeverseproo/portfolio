@@ -1,25 +1,33 @@
 /* // basic boilerplate setting  */
 
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-ul,
-li,
-ol {
-  margin: 0;
-  padding: 0;
+@layer utilities {
+  .social-icon {
+    @apply w-6 h-6;
+  }
+  .button {
+    @apply bg-gray-50 text-dgreen-500 font-karla font-bold px-5 py-2 rounded-xl transition-all duration-200
+    shadow-gray-700 shadow-sm border;
+  }
+  .btn-hover {
+    @apply bg-gray-100 rounded-lg;
+  }
+  .btn-active {
+    @apply bg-gray-50 rounded-md;
+  }
+  .section-heading {
+    @apply font-karla font-bold text-3xl flex max-md:justify-center;
+  }
+  .section {
+    @apply px-16 py-16;
+  }
+  .input {
+    @apply sm:w-[400px] px-2 py-2 border-none rounded-md text-black;
+  }
 }
