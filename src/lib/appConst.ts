@@ -47,19 +47,8 @@ export const mySkills = [
 export const projects = [
   {
     projectImg: defaultProjectImg,
-    projectTitle: "Project 1",
-  },
-  {
-    projectImg: defaultProjectImg,
-    projectTitle: "Project 2",
-  },
-  {
-    projectImg: defaultProjectImg,
-    projectTitle: "Project 3",
-  },
-  {
-    projectImg: defaultProjectImg,
-    projectTitle: "Project 4",
+    projectTitle: "Portfolio Project",
+    gitUrl: "https://github.com/datacreeded/portfolio",
   },
 ];
 

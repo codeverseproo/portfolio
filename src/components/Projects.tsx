@@ -8,7 +8,7 @@ export default function Projects() {
             <div className="flex justify-center items-center flex-wrap gap-10 mt-16">
                 {
                     projects.map((project) => {
-                        return <ProjectCard key={project.projectTitle} projectImg={project.projectImg} projectTitle={project.projectTitle} />
+                        return <ProjectCard key={project.projectTitle} gitURL={project.gitUrl} projectImg={project.projectImg} projectTitle={project.projectTitle} />
                     })
                 }
             </div>
