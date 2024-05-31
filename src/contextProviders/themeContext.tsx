@@ -13,7 +13,11 @@ export const themeContext = createContext<TthemeContext>({
 });
 
 export function ThemeContextProvider({ children }: { children: React.ReactNode }) {
-    const [currentTheme, setCurrentTheme] = useState("dark");
+    const localTheme = localStorage.getItem("theme")
+    const [currentTheme, setCurrentTheme] = useState(localTheme ? localTheme : "dark");
+
+    localStorage.setItem("theme", currentTheme);
+
     return (
         <themeContext.Provider value={{ theme: currentTheme, setTheme: setCurrentTheme }}>{children}</themeContext.Provider>
     )

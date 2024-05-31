@@ -12,7 +12,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className={`px-16 py-5 bg-pista-500 flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-center text-gray-50`}>
+        <nav className={` px-16 py-5 bg-pista-500 flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-center text-gray-50`}>
             <div>
                 <h1 className="font-karla font-bold text-lg">CodeversePro</h1>
             </div>
