@@ -1,7 +1,7 @@
 import twitterIcon from "../assets/social/square-x-twitter.svg";
 import linkedinIcon from "../assets/social/linkedin.svg";
 import githubIcon from "../assets/social/square-github.svg";
-import defaultProjectImg from "../assets/closeShot.jpg";
+import defaultProjectImg from "../assets/projects/defaultProject.png";
 
 export const personalDetail = {
   name: "CodeversePro",
