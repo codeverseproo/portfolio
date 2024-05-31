@@ -2,6 +2,7 @@ import { personalDetail, socialLinks } from "../lib/appConst"
 import Button from "./utils/Button"
 import closeShot from "../assets/closeShot.jpg"
 
+
 export default function Hero() {
     return (
         <section id="About-Me" className="flex min-h-screen justify-center gap-20 items-center px-16 max-md:py-16 md:flex-row flex-col">
