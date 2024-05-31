@@ -49,6 +49,7 @@ export const projects = [
     projectImg: defaultProjectImg,
     projectTitle: "Portfolio Project",
     gitUrl: "https://github.com/datacreeded/portfolio",
+    projectDescription: "A Potfolio WebApp",
   },
 ];
 

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { menu } from "../lib/appConst";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { useThemeContext } from "../lib/contextProvider";
+import { personalDetail } from "../lib/appConst";
 
 export default function Nav() {
 
@@ -12,9 +13,9 @@ export default function Nav() {
     }
 
     return (
-        <nav className={` px-16 py-5  flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-center `}>
+        <nav className={` px-16 py-5  flex justify-between items-center flex-wrap gap-5 max-md:flex-col max-md:items-center `}>
             <div>
-                <h1 className="font-karla font-bold text-lg"><a href="/">CodeversePro</a></h1>
+                <h1 className="font-karla font-bold text-2xl"><a href="/">{personalDetail.name}</a></h1>
             </div>
             <div>
                 <ul className="flex gap-5 flex-wrap justify-center">
