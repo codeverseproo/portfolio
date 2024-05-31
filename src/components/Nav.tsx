@@ -12,7 +12,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className={`px-16 py-5 bg-pista-500 flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-cente text-gray-50`}>
+        <nav className={`px-16 py-5 bg-pista-500 flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-center text-gray-50`}>
             <div>
                 <h1 className="font-karla font-bold text-lg">CodeversePro</h1>
             </div>
@@ -23,7 +23,7 @@ export default function Nav() {
                             return <li key={item.label} className=""><a href={item.url} className="px-2 py-2">{item.label}</a></li>
                         })
                     }
-                    <li onClick={handleThemeChange}><FontAwesomeIcon icon={faSun} className={themeContext.theme == 'dark' ? "text-white hover:scale-125 hover:rotate-90 transition-all duration-150" : "text-dgreen-700 hover:scale-125 hover:rotate-90 transition-all duration-150"} /></li>
+                    <li onClick={handleThemeChange} className="fixed top-2 right-2 text-2xl"><FontAwesomeIcon icon={faSun} className={themeContext.theme == 'dark' ? "text-white hover:scale-125 hover:rotate-90 transition-all duration-150" : "text-dgreen-700 hover:scale-125 hover:rotate-90 transition-all duration-150"} /></li>
                 </ul>
             </div>
         </nav >
