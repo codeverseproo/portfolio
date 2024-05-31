@@ -1,3 +1,4 @@
+import { useThemeContext } from "../../lib/contextProvider"
 
 type TProjectCard = {
     projectImg: string,
@@ -5,9 +6,10 @@ type TProjectCard = {
 }
 
 export default function ProjectCard({ projectImg, projectTitle }: TProjectCard) {
+    const themeContext = useThemeContext();
     return (
         <div className="flex flex-col justify-center items-center gap-5">
-            <img src={projectImg} className="bg-white rounded-lg w-[200px] h-[200px] border-2 border-pista-500 shadow-sm shadow-pista-200" alt="#" />
+            <img src={projectImg} className={`bg-white rounded-lg w-[200px] h-[200px]  shadow-sm  ${themeContext.theme == 'dark' ? "border-pista-500 shadow-pista-200" : "border-dgreen-700 shadow-dgreen-300"}`} alt="#" />
             <h3 className="font-semibold text-lg">{projectTitle}</h3>
         </div>
     )
