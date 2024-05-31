@@ -23,7 +23,7 @@ export default function Nav() {
                             return <li key={item.label} className=""><a href={item.url} className="px-2 py-2">{item.label}</a></li>
                         })
                     }
-                    <li onClick={handleThemeChange} className="fixed top-2 right-2 text-2xl"><FontAwesomeIcon icon={faSun} className={themeContext.theme == 'dark' ? "text-white hover:scale-125 hover:rotate-90 transition-all duration-150" : "text-dgreen-700 hover:scale-125 hover:rotate-90 transition-all duration-150"} /></li>
+                    <li onClick={handleThemeChange} className="fixed top-5 right-5 text-2xl"><FontAwesomeIcon icon={faSun} className={themeContext.theme == 'dark' ? "text-white hover:scale-125 hover:rotate-90 transition-all duration-150" : "text-dgreen-700 hover:scale-125 hover:rotate-90 transition-all duration-150"} /></li>
                 </ul>
             </div>
         </nav >
