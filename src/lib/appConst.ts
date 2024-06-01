@@ -29,19 +29,12 @@ export const socialLinks = [
 ];
 
 export const mySkills = [
-  "JavaScript",
-  "Html",
-  "Css",
-  "TypeScript",
-  "React",
-  "Redux and Redux Toolkit",
-  "Tailwind CSS",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "PostgreSQL",
-  "Git",
-  "Github",
+  ["HTML", "CSS", "JavaScript", "TailwindCSS", "Bootstrap"],
+  ["React", "NextJS", "Redux", "ContextAPI"],
+  ["Node.Js", "ExpressJs"],
+  ["MongoDB", "Firebase", "PostgreSQL"],
+  ["Git", "Github", "Heroku", "Netlify"],
+  ["Aws", "Docker"],
 ];
 
 export const projects = [
