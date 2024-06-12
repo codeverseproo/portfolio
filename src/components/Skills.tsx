@@ -13,7 +13,7 @@ export default function Skills() {
                     {
                         mySkills.map((skillSet, index) => {
                             return (
-                                <>
+                                <div key={index}>
                                     <ul key={index} className='flex gap-5 flex-wrap px-[150px] max-md:px-5  justify-center items-center'>
                                         {
                                             skillSet.map((skill, index) => {
@@ -22,7 +22,7 @@ export default function Skills() {
                                         }
                                     </ul>
                                     <div className={`h-[2px] w-[100px] border-dashed border-t ${themeContext.theme == 'dark' ? 'border-gray-50' : 'border-dgreen-700'}`}></div>
-                                </>
+                                </div>
                             )
                         })
                     }

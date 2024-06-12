@@ -2,6 +2,7 @@ import twitterIcon from "../assets/social/square-x-twitter.svg";
 import linkedinIcon from "../assets/social/linkedin.svg";
 import githubIcon from "../assets/social/square-github.svg";
 import defaultProjectImg from "../assets/projects/defaultProject.png";
+import exomexpressImg from "../assets/projects/project ecomexpress Screenshot 2024-06-12 105437.png";
 
 export const personalDetail = {
   name: "CodeversePro",
@@ -43,6 +44,13 @@ export const projects = [
     projectTitle: "Portfolio Project",
     gitUrl: "https://github.com/datacreeded/portfolio",
     projectDescription: "A Potfolio WebApp",
+  },
+  {
+    projectImg: exomexpressImg,
+    projectTitle: "EcomExpress",
+    gitUrl: "https://ecomexpresss-93c1c55679af.herokuapp.com/",
+    projectDescription:
+      "EcomExpress is frontend design for the ecomerce website",
   },
 ];
 
