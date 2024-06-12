@@ -13,7 +13,7 @@ export default function Skills() {
                     {
                         mySkills.map((skillSet, index) => {
                             return (
-                                <div key={index}>
+                                <div key={index} className='flex flex-col justify-center items-center gap-4 flex-wrap'>
                                     <ul key={index} className='flex gap-5 flex-wrap px-[150px] max-md:px-5  justify-center items-center'>
                                         {
                                             skillSet.map((skill, index) => {
